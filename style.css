@@ -1,38 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fb;
   margin: 0;
-  padding: 0;
-  color: #222;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #eef3f9, #f9fbfe);
+  color: #1f2937;
 }
 
+/* MAIN CARD */
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
+  max-width: 820px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px 45px 50px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.9s ease;
 }
 
+/* HEADINGS */
 h1 {
+  margin-top: 0;
+  font-size: 32px;
+  color: #0b3c5d;
+  letter-spacing: 0.3px;
+}
+
+p strong {
+  color: #374151;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 22px;
   color: #0b3c5d;
 }
 
-a {
-  text-decoration: none;
-  color: #0a66c2;
-  font-weight: 600;
+/* LINKS */
+.links {
+  margin-top: 18px;
+  line-height: 2.1;
 }
 
 .links a {
-  display: inline-block;
-  margin: 10px 15px 10px 0;
+  color: #0a66c2;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 14px;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
+.links a:hover {
+  color: #084c9e;
+  transform: translateY(-1px);
+}
+
+/* ADDRESS */
+p {
+  font-size: 15.5px;
+  line-height: 1.65;
+}
+
+/* MAP BUTTON */
 .map-btn {
   display: block;
-  background: #2196f3;
-  color: #fff;
+  margin-top: 38px;
+  padding: 16px;
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  color: #ffffff;
   text-align: center;
-  padding: 14px;
-  border-radius: 10px;
-  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(30, 136, 229, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.map-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(30, 136, 229, 0.45);
+}
+
+/* FOOTER */
+.container p:last-child {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ANIMATIONS */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+  .container {
+    margin: 25px 16px;
+    padding: 28px 22px 35px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
 }
