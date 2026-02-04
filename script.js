@@ -1,6 +1,7 @@
-// ArchPlus Healthcare Pvt. Ltd. - VCard Script
-// Light animation & future enhancements ready
-
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("ArchPlus Healthcare V-Card Loaded Successfully");
+  document.body.style.opacity = 0;
+  document.body.style.transition = "opacity 1s ease";
+  setTimeout(() => {
+    document.body.style.opacity = 1;
+  }, 100);
 });
