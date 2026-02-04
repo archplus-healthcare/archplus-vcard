@@ -1,0 +1,15 @@
+.map-btn {
+  display: block;
+  margin-top: 12px;
+  text-decoration: none;
+  background: #1fa2ff;
+  color: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.map-btn:hover {
+  background: #0b6fb6;
+}
