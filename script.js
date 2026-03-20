@@ -45,11 +45,11 @@ window.addEventListener("load", function () {
 const pdfData = {
     services: [
         { name: "Test PDF", file: "pdfs/test.pdf", icon: "images/icons/test.png" },
-        { name: "Stretcher pdf", file: "pdfs/stretcher.pdf" },
-        { name: "Stretcher pdf", file: "pdfs/Stretcher.pdf" }
+        { name: "Stretcher pdf", file: "pdfs/stretcher.pdf", icon: "images/icons/stretcher.png" }
     ],
     diagnostic: [
-        { name: "MRI Scan Service", file: "pdfs/mri.pdf", icon: "images/icons/mri.png" }
+        { name: "MRI Scan Service", file: "pdfs/mri.pdf", icon: "images/icons/mri.png" },
+        { name: "Stretcher pdf", file: "pdfs/stretcher.pdf", icon: "images/icons/stretcher.png" }
     ],
     report: []
 };
