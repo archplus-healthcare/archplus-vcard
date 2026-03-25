@@ -21,7 +21,21 @@ window.addEventListener("load", () => {
 // }
 
 function saveContact() {
-    window.location.href = "contact.vcf";
+
+    const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // 📱 Mobile → direct open (contact save screen)
+        window.location.href = "contact.vcf";
+    } else {
+        // 💻 Desktop → force download
+        const link = document.createElement("a");
+        link.href = "contact.vcf";
+        link.download = "ArchPlus-Healthcare.vcf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 }
 
 function myFunction() {
