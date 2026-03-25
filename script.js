@@ -11,14 +11,19 @@ window.addEventListener("load", () => {
     }, 1200); // loader visible time
 });
 
+// function saveContact() {
+//     const link = document.createElement("a");
+//     link.href = "contact.vcf";
+//     link.download = "ArchPlus-Healthcare.vcf";
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+// }
+
 function saveContact() {
-    const link = document.createElement("a");
-    link.href = "contact.vcf";
-    link.download = "ArchPlus-Healthcare.vcf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.location.href = "contact.vcf";
 }
+
 function myFunction() {
     var x = document.getElementById("panel");
     if (x.style.display === "none") {
@@ -39,7 +44,6 @@ window.addEventListener("load", function () {
         }
     }, 1800); // 1.8 sec loading
 });
-
 
 
 const pdfData = {
