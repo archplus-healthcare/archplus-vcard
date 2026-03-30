@@ -69,7 +69,11 @@ const pdfData = {
         { name: "MRI Scan Service", file: "pdfs/mri.pdf", icon: "images/icons/mri.png" },
         { name: "Stretcher pdf", file: "pdfs/stretcher.pdf", icon: "images/icons/stretcher.png" }
     ],
-    report: []
+    report: [
+        { name: "PHILIPS TIT DEMO REPORT", file: "pdfs/tit report.pdf", icon: "images/icons/mri.png" },
+        { name: "SLEEP STUDY DEMO REPORT", file: "pdfs/sleep study report.pdf", icon: "images/icons/stretcher.png" },
+        { name: "TMT DEMO REPORT", file: "pdfs/tmt report.pdf", icon: "images/icons/stretcher.png" }
+    ]
 };
 
 // Example data (jitna add karoge utna page banega)
